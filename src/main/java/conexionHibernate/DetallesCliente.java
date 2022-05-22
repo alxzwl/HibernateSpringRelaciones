@@ -29,8 +29,7 @@ public class DetallesCliente {
 
 	}
 
-	public DetallesCliente(int id, String web, String tfno, String comentarios) {
-		this.id = id;
+	public DetallesCliente(String web, String tfno, String comentarios) {
 		this.web = web;
 		this.tfno = tfno;
 		this.comentarios = comentarios;
