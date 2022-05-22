@@ -14,9 +14,8 @@ public class InsertaCliente {
 				.buildSessionFactory();
 		Session miSession = miFactory.openSession();
 		try {
-			Cliente cliente1 = new Cliente("Sandra", "Delgado", "Golla");
-			DetallesCliente detalleCliente1 = new DetallesCliente("ElXinoby.com", "5566778899",
-					"Soy el mejor programador en Java");
+			Cliente cliente1 = new Cliente("Paco", "Gomez", "Princesa");
+			DetallesCliente detalleCliente1 = new DetallesCliente("Tutoriales.com", "5544332211", "Yo puedo");
 
 			// Asociar los objetos
 			cliente1.setDetallesCliente(detalleCliente1);
