@@ -18,13 +18,14 @@ public class ObtenerCliente {
 			// Obtener DetallesCliente
 			DetallesCliente detallesCliente = miSession.get(DetallesCliente.class, 1);
 			System.out.println(detallesCliente);
-
 			System.out.println(detallesCliente.getElCliente());
 
 			miSession.getTransaction().commit();
 
-			miSession.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
+			miSession.close();
 			miFactory.close();
 		}
 	}
